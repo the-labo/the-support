@@ -1,0 +1,50 @@
+{
+    "functions": [
+        {
+            "name": "create",
+            "access": "",
+            "virtual": false,
+            "description": "Create a TheSupport instance",
+            "parameters": [
+                {
+                    "name": "args",
+                    "type": "*",
+                    "description": "",
+                    "default": "",
+                    "optional": "",
+                    "nullable": ""
+                }
+            ],
+            "examples": [],
+            "returns": {
+                "type": "TheSupport",
+                "description": ""
+            }
+        }
+    ],
+    "classes": [
+        {
+            "name": "TheSupport",
+            "description": "",
+            "extends": [],
+            "access": "",
+            "virtual": false,
+            "fires": "",
+            "constructor": {
+                "name": "TheSupport",
+                "description": "",
+                "parameters": [
+                    {
+                        "name": "pattern",
+                        "type": "string",
+                        "description": "Filename pattern",
+                        "default": "",
+                        "optional": "",
+                        "nullable": ""
+                    }
+                ],
+                "examples": []
+            }
+        }
+    ]
+}
