@@ -31,11 +31,13 @@ function theSupportTask (pattern, options = {}) {
       console.log(e.snippet)
       console.log('-----------')
       console.log('')
+
       process.exit(1)
     }
-    const filenames = results.filter(({ok}) => ok).map(({filename}) =>
-      path.relative(process.cwd(), filename)
-    )
+    const filenames = Object.entries(results || {}).filter(([filename, {ok}]) => ok)
+      .map(([filename]) =>
+        path.relative(process.cwd(), filename)
+      )
     const icon = chalk.green('✓')
     for (const filename of filenames) {
       subLogger.trace(`${icon} ${filename}`)
