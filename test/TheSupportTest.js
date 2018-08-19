@@ -19,7 +19,7 @@ describe('the-support', () => {
 
     const support = new TheSupport(`${__dirname}/../misc/mocks/es-6-script.js`)
 
-    await support.es6()
+    await support.es2015()
     {
       const caught = await support.es5().then(() => null).catch((e) => e)
       ok(caught)
